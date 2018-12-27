@@ -64,3 +64,17 @@ Java内存模型
          大数据项的查询，如返回表的所有记录，应该采用分页查询
          检查是否有数组，list,map中存放的是对象的引用而不是对象。这些引用会让个对象不能被释放掉。
 </pre>
+
+<pre>
+常用调优工具分为两类
+
+        jdk自带监控工具：jconsole和jvisualvm，第三方有：MAT(Memory Analyzer Tool)、
+        GChisto。
+
+        1.jconsole，Java Monitoring and Management Console是从java5开始，在JDK中
+          自带的java监控和管理控制台，用于对JVM中内存，线程和类等的监控
+        2.jvisualvm，jdk自带全能工具，可以分析内存快照、线程快照；监控内存变化、GC变化等。
+        3.MAT，Memory Analyzer Tool，一个基于Eclipse的内存分析工具，是一个快速、功能
+          丰富的Java heap分析工具，它可以帮助我们查找内存泄漏和减少内存消耗
+        4.GChisto，一款专业分析gc日志的工具
+</pre>
